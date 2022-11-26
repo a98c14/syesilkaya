@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/base.astro';
+
+const title = "save_system_0";
+---
+<Base>
+    <div>
+        <h2>rc_devlog_0</h2>
+        <div>working on a save system. it will be more than that because we are able to save part of the game.</div>
+
+        <div>current we have two problems with it;</div>
+        <ul>
+            <li>blob references aren't getting saved correctly <i>(only used for animations)</i> so i will be replacing those with a hashmap (in <code>AnimationSystem</code>)</li>
+            <li>we are adding components during runtime and those aren't getting recreated during load</li>
+        </ul>
+    </div>
+</Base>

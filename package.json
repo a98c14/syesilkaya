@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource/titillium-web": "^4.5.9",
     "astro": "^1.6.11"
   }
 }
