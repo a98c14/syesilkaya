@@ -1,9 +1,24 @@
 ---
 import Base from '../layouts/base.astro';
+
+const code = 
+`
+using System; 
+
+public class Program
+{
+	int x = 0;
+}
+`
 ---
 
 <Base>
 	<div>
 		welcome to my blog
+		<pre>
+			<code class="language-csharp">
+				{code}
+			</code>
+		</pre>
 	</div>
 </Base>

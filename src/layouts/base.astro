@@ -2,6 +2,7 @@
 import '@fontsource/titillium-web';
 import '../styles/global.css';
 import '../styles/normalize.css';
+import '../styles/default.min.css'
 import Header from '../components/header.astro';
 import Navigation from '../components/navigation.astro';
 
@@ -13,11 +14,15 @@ import Navigation from '../components/navigation.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link is:inline rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+		<script is:inline src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+		<script>hljs.highlightAll();</script>
 		<title>syesilkaya</title>
 	</head>
 	<body>
 		<Header />
 		<Navigation />
         <slot />
+
 	</body>
 </html>
